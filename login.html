@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Create Account | Career Campus</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main class="auth-page">
+    <aside class="brand-panel">
+      <a class="brand" href="index.html" aria-label="Career Campus home">
+        <img src="assets/logo.png" alt="Career Campus logo" class="brand-logo">
+        <span class="brand-divider"></span>
+        <span class="brand-tagline">FROM COLLEGE TO CAREER</span>
+      </a>
+
+      <span class="gold-rule"></span>
+      <div class="brand-message">
+        <h1>Your career path<br>starts with one<br>step.</h1>
+        <p>Discover where your skills can take you.<br>
+          Build a roadmap. Prepare for what comes<br>
+          next.</p>
+      </div>
+
+      <div class="journey-art" aria-hidden="true">
+        <svg viewBox="0 0 390 220">
+          <path class="journey-path" d="M28 188 C72 137, 103 143, 139 126 S197 83, 226 72 S269 42, 310 24"/>
+          <g class="journey-point" transform="translate(28 188)"><circle r="10"/><circle r="4"/></g>
+          <g class="journey-point" transform="translate(98 137)"><circle r="10"/><circle r="4"/></g>
+          <g class="journey-point" transform="translate(158 98)"><circle r="10"/><circle r="4"/></g>
+          <g class="journey-point" transform="translate(218 58)"><circle r="10"/><circle r="4"/></g>
+          <g class="journey-point" transform="translate(268 38)"><circle r="12"/><circle r="5"/></g>
+          <g class="journey-labels">
+            <text x="5" y="213">Profile</text><text x="79" y="163">Skills</text>
+            <text x="142" y="123">Explore</text><text x="198" y="84">Roadmap</text>
+            <text x="246" y="64">Career</text>
+          </g>
+        </svg>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+      </div>
+      <div class="panel-footer">LEARN · EXPLORE · GROW · SUCCEED</div>
+    </aside>
+
+    <section class="form-panel">
+      <a class="back-home" href="index.html">← Back to Home</a>
+      <div class="auth-screen-wrap">
+
+      <!-- LOGIN SCREEN -->
+      <section class="auth-content login-view" id="login">
+        <div class="auth-tabs">
+          <a class="tab active" href="#login">Log In</a>
+          <a class="tab" href="#signup">Create Account</a>
+        </div>
+        <h2>Welcome back.</h2>
+        <p class="form-intro">Log in to continue building your career path.</p>
+
+        <form class="auth-form" action="#" method="post">
+          <div class="form-group">
+            <label for="login-email">Email Address</label>
+            <input id="login-email" name="login-email" type="email"
+                   placeholder="you@university.edu" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <div class="label-row">
+              <label for="login-password">Password</label>
+              <a href="#" class="forgot-link">Forgot password?</a>
+            </div>
+            <div class="password-field">
+              <input id="login-password" name="login-password" type="password"
+                     placeholder="Enter your password" autocomplete="current-password" required>
+              <button type="button" class="eye-icon" data-target="login-password"
+                      aria-label="Show password">
+                <svg viewBox="0 0 24 24" width="19" height="19"
+                     fill="none" stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="submit-button" type="submit">Log In <span>→</span></button>
+        </form>
+
+        <div class="divider"><span>or continue with</span></div>
+        <a class="google-button" href="#">
+          <span class="google-g" aria-hidden="true">G</span>Continue with Google
+        </a>
+        <p class="switch-copy">Don't have an account? <a href="#signup">Create one</a></p>
+      </section>
+
+      <!-- CREATE ACCOUNT SCREEN -->
+      <section class="auth-content signup-view" id="signup">
+        <h2>Join Career Campus.</h2>
+        <p class="form-intro">Create your free account and start exploring.</p>
+
+        <form class="auth-form signup-form" action="about-your-skills.html" method="get">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input id="full-name" type="text"
+                   placeholder="Your full name" autocomplete="name" required>
+          </div>
+          <div class="form-group">
+            <label for="signup-email">Email Address</label>
+            <input id="signup-email" type="email"
+                   placeholder="you@university.edu" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="signup-password">Password</label>
+            <div class="password-field">
+              <input id="signup-password" type="password"
+                     placeholder="Create a password" autocomplete="new-password" required>
+              <button type="button" class="eye-icon" data-target="signup-password"
+                      aria-label="Show password">
+                <svg viewBox="0 0 24 24" width="19" height="19"
+                     fill="none" stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <div class="password-field">
+              <input id="confirm-password" type="password"
+                     placeholder="Confirm your password" autocomplete="new-password" required>
+              <button type="button" class="eye-icon" data-target="confirm-password"
+                      aria-label="Show password">
+                <svg viewBox="0 0 24 24" width="19" height="19"
+                     fill="none" stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-divider"></div>
+          <div class="form-group">
+    <label for="college">College / University</label>
+    <select id="college" name="college" required>
+        <option value="">Select your college / university</option>
+        <option value="BML Munjal University">BML Munjal University</option>
+        <option value="Delhi University">Delhi University</option>
+        <option value="Amity University">Amity University</option>
+        <option value="Chandigarh University">Chandigarh University</option>
+        <option value="Manipal University">Manipal University</option>
+        <option value="Lovely Professional University">Lovely Professional University</option>
+        <option value="Other">Other</option>
+    </select>
+<input
+    type="text"
+    id="other-college"
+    class="other-field"
+    placeholder="Enter your college / university"
+>
+</div>
+          <div class="form-group">
+    <label for="degree">Degree</label>
+    <select id="degree" name="degree" required>
+        <option value="">Select your degree</option>
+        <option value="B.Tech">B.Tech</option>
+        <option value="B.E">B.E</option>
+        <option value="BCA">BCA</option>
+        <option value="B.Sc">B.Sc</option>
+        <option value="BBA">BBA</option>
+        <option value="B.Com">B.Com</option>
+        <option value="MCA">MCA</option>
+        <option value="M.Tech">M.Tech</option>
+        <option value="MBA">MBA</option>
+        <option value="Other">Other</option>
+    </select>
+<input
+    type="text"
+    id="other-degree"
+    class="other-field"
+    placeholder="Enter your degree"
+>
+</div>
+          <button class="submit-button" type="submit">Create Account <span>→</span></button>
+        </form>
+
+        <div class="divider"><span>or continue with</span></div>
+        <a class="google-button" href="#">
+          <span class="google-g" aria-hidden="true">G</span>Continue with Google
+        </a>
+        <p class="switch-copy signup-switch">Already have an account? <a href="login.html#login">Log in</a></p>
+      </section>
+      </div>
+    </section>
+  </main>
+  <script src="js/login.js"></script>
+</body>
+</html>

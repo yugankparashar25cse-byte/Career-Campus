@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guide | Career Campus</title>
+    <link rel="stylesheet" href="career-guide.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="index.html" class="brand" aria-label="Career Campus home">
+                <img src="assets/logo.png" alt="Career Campus logo" class="logo">
+                <span class="brand-tagline">FROM COLLEGE TO CAREER</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="career-guide.html" class="active">Career Guide</a>
+                <a href="industry-insights.html">Industry Insights</a>
+                <a href="about.html">About</a>
+            </nav>
+            <div class="nav-actions">
+                <a class="login-link" href="login.html">Login</a>
+                <a class="nav-button" href="login.html">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="career-hero">
+            <div class="container">
+                <p class="eyebrow">CAREER GUIDE</p>
+                <h1>Find Your Career Path</h1>
+                <p>Explore career options based on your interests, education, and<br class="desktop-break"> current skills.</p>
+                <form class="career-search" action="#career-paths" method="get">
+                    <label class="visually-hidden" for="career-search">Search careers</label>
+                    <input type="search" id="career-search" name="q" placeholder="Search careers...">
+                    <label class="visually-hidden" for="career-category">Career category</label>
+                    <select id="career-category" name="category">
+                        <option value="all">All Careers</option>
+                        <option value="software">Software &amp; Technology</option>
+                        <option value="data">Data &amp; Analytics</option>
+                        <option value="ai">Artificial Intelligence</option>
+                        <option value="security">Cybersecurity</option>
+                        <option value="cloud">Cloud Computing</option>
+                    </select>
+                    <button type="submit">Search <span aria-hidden="true">→</span></button>
+                </form>
+            </div>
+        </section>
+
+        <section class="career-explore" id="career-paths">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">BROWSE</p>
+                    <h2>Explore Career Paths</h2>
+                </div>
+
+                <div class="career-grid">
+                    <article class="career-card" data-category="software">  
+                        <div class="career-card-top"><span class="career-icon" aria-hidden="true">&lt;/&gt;</span><span class="bookmark" aria-hidden="true">♧</span></div>
+                        <h3>Software Developer</h3>
+                        <p>Build applications and software solutions.</p>
+                        <a href="#software-developer">View Career <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="career-card" data-category="software">
+                        <div class="career-card-top"><span class="career-icon" aria-hidden="true">▱</span><span class="bookmark" aria-hidden="true">♧</span></div>
+                        <h3>Full-Stack Developer</h3>
+                        <p>Develop complete web applications from front end to back end.</p>
+                        <a href="#full-stack-developer">View Career <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="career-card" data-category="data">
+                        <div class="career-card-top"><span class="career-icon" aria-hidden="true">♟</span><span class="bookmark" aria-hidden="true">♧</span></div>
+                        <h3>Data Analyst</h3>
+                        <p>Analyze data to discover useful insights and support better decisions.</p>
+                        <a href="#data-analyst">View Career <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="career-card" data-category="ai">
+                        <div class="career-card-top"><span class="career-icon" aria-hidden="true">▦</span><span class="bookmark" aria-hidden="true">♧</span></div>
+                        <h3>AI/ML Engineer</h3>
+                        <p>Build intelligent systems using data and machine learning.</p>
+                        <a href="#ai-ml-engineer">View Career <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="career-card" data-category="security">
+                        <div class="career-card-top"><span class="career-icon" aria-hidden="true">♢</span><span class="bookmark" aria-hidden="true">♧</span></div>
+                        <h3>Cybersecurity Specialist</h3>
+                        <p>Protect systems, networks and digital information.</p>
+                        <a href="#cybersecurity">View Career <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="career-card" data-category="cloud">
+                        <div class="career-card-top"><span class="career-icon" aria-hidden="true">☁</span><span class="bookmark" aria-hidden="true">♧</span></div>
+                        <h3>Cloud Engineer</h3>
+                        <p>Design and manage scalable cloud infrastructure.</p>
+                        <a href="#cloud-engineer">View Career <span aria-hidden="true">→</span></a>
+                    </article>
+                </div>
+                <p id="no-results" hidden>
+    No careers found. Try another search or category.
+</p>
+            </div>
+        </section>
+
+        <section class="featured-career" id="software-developer">
+            <div class="container featured-grid">
+                <div class="featured-info">
+                    <p class="eyebrow">FEATURED CAREER</p>
+                    <div class="featured-title">
+                        <span class="featured-icon" aria-hidden="true">&lt;/&gt;</span>
+                        <div><h2>Software Developer</h2><p class="career-demand">↗ High demand career</p></div>
+                    </div>
+                    <p class="featured-description">Design, develop and maintain software applications. Software developers build systems across web, mobile, desktop and enterprise platforms — solving real problems through code.</p>
+
+                    <h3 class="mini-heading">REQUIRED SKILLS</h3>
+                    <div class="skill-tags">
+                        <span>Java</span><span class="skill-known">✓ Python</span><span>Data Structures</span><span>Algorithms</span><span class="skill-known">✓ SQL</span><span>Git</span>
+                    </div>
+
+                    <div class="skills-match">
+                        <div class="match-heading"><strong>YOUR SKILLS MATCH</strong><span>2/6 skills</span></div>
+                        <div class="match-track"><span></span></div>
+                        <div class="match-tags"><span>✓ HTML</span><span>✓ JavaScript</span><span>✓ Python</span><span>✓ SQL</span></div>
+                    </div>
+                    <a class="roadmap-button" href="#roadmap">View Career Roadmap <span aria-hidden="true">→</span></a>
+                </div>
+
+                <div class="featured-analysis">
+                    <div class="gap-panel">
+                        <div class="gap-panel-heading"><h3>SKILL GAP ANALYSIS</h3><p>Skills to develop for this career path.</p></div>
+                        <div class="gap-row"><div><span>Data Structures</span><small>Not started</small></div><div class="gap-track"><span class="gap-empty"></span></div></div>
+                        <div class="gap-row"><div><span>Algorithms</span><small>Not started</small></div><div class="gap-track"><span class="gap-empty"></span></div></div>
+                        <div class="gap-row"><div><span>Java</span><small>15%</small></div><div class="gap-track"><span class="java-progress"></span></div></div>
+                        <p class="gap-footnote">Your roadmap will focus on these <strong>3 missing skills</strong> to help you reach this career path.</p>
+                    </div>
+                    <div class="skill-counts">
+                        <div><strong>2</strong><p>Skills you already have</p></div>
+                        <div><strong>3</strong><p>Skills to develop</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!-- FULL-STACK DEVELOPER -->
+<section class="featured-career" id="full-stack-developer">
+    <div class="container featured-grid">
+
+        <div class="featured-info">
+            <p class="eyebrow">FEATURED CAREER</p>
+
+            <div class="featured-title">
+                <span class="featured-icon" aria-hidden="true">&lt;/&gt;</span>
+                <div>
+                    <h2>Full-Stack Developer</h2>
+                    <p class="career-demand">↗ High demand career</p>
+                </div>
+            </div>
+
+            <p class="featured-description">
+                Build complete web applications by working on both
+                frontend interfaces and backend systems, databases and APIs.
+            </p>
+
+            <h3 class="mini-heading">REQUIRED SKILLS</h3>
+
+            <div class="skill-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>SQL</span>
+                <span>Git</span>
+            </div>
+
+            <div class="skills-match">
+                <div class="match-heading">
+                    <strong>YOUR SKILLS MATCH</strong>
+                    <span>3/7 skills</span>
+                </div>
+
+                <div class="match-track">
+                    <span style="width: 43%;"></span>
+                </div>
+
+                <div class="match-tags">
+                    <span>✓ HTML</span>
+                    <span>✓ JavaScript</span>
+                    <span>✓ SQL</span>
+                </div>
+            </div>
+
+            <a href="#roadmap" class="roadmap-button">
+                View Career Roadmap →
+            </a>
+        </div>
+
+<div class="featured-analysis">
+    <div class="gap-panel">
+
+        <div class="gap-panel-heading">
+            <h3>SKILL GAP ANALYSIS</h3>
+            <p>Skills to develop for this career path.</p>
+        </div>
+
+        <div class="gap-row">
+            <div>
+                <span>CSS</span>
+                <small>Not started</small>
+            </div>
+            <div class="gap-track">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="gap-row">
+            <div>
+                <span>React</span>
+                <small>Not started</small>
+            </div>
+            <div class="gap-track">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="gap-row">
+            <div>
+                <span>Node.js</span>
+                <small>Not started</small>
+            </div>
+            <div class="gap-track">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="gap-row">
+            <div>
+                <span>Git</span>
+                <small>Not started</small>
+            </div>
+            <div class="gap-track">
+                <span></span>
+            </div>
+        </div>
+
+        <p class="gap-footnote">
+            Your roadmap will focus on these
+            <strong>4 missing skills</strong> to help you reach this career path.
+        </p>
+    </div>
+
+    <div class="skill-counts">
+        <div>
+            <strong>3</strong>
+            <p>Skills you already have</p>
+        </div>
+
+        <div>
+            <strong>4</strong>
+            <p>Skills to develop</p>
+        </div>
+    </div>
+</div>
+    </section>
+
+
+<!-- DATA ANALYST -->
+<section class="featured-career" id="data-analyst">
+    <div class="container featured-grid">
+
+        <div class="featured-info">
+            <p class="eyebrow">FEATURED CAREER</p>
+
+            <div class="featured-title">
+                <span class="featured-icon" aria-hidden="true">▦</span>
+                <div>
+                    <h2>Data Analyst</h2>
+                    <p class="career-demand">↗ Growing career opportunities</p>
+                </div>
+            </div>
+
+            <p class="featured-description">
+                Analyze datasets, identify patterns and communicate
+                meaningful insights that help organizations make decisions.
+            </p>
+
+            <h3 class="mini-heading">REQUIRED SKILLS</h3>
+
+            <div class="skill-tags">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Excel</span>
+                <span>Statistics</span>
+                <span>Power BI</span>
+                <span>Tableau</span>
+            </div>
+
+            <div class="skills-match">
+                <div class="match-heading">
+                    <strong>YOUR SKILLS MATCH</strong>
+                    <span>1/6 skills</span>
+                </div>
+
+                <div class="match-track">
+                    <span style="width: 16.67%;"></span>
+                </div>
+
+                <div class="match-tags">
+                    <span>✓ SQL</span>
+                </div>
+            </div>
+
+            <a href="#roadmap" class="roadmap-button">
+                View Career Roadmap →
+            </a>
+        </div>
+
+        <div class="featured-analysis">
+            <div class="gap-panel">
+
+                <div class="gap-panel-heading">
+                    <h3>SKILL GAP ANALYSIS</h3>
+                    <p>Skills to develop for this career path.</p>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Python</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Excel</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Statistics</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Power BI</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Tableau</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <p class="gap-footnote">
+                    Your roadmap will focus on these
+                    <strong>5 missing skills</strong> to help you reach this career path.
+                </p>
+
+            </div>
+
+            <div class="skill-counts">
+                <div>
+                    <strong>1</strong>
+                    <p>Skills you already have</p>
+                </div>
+
+                <div>
+                    <strong>5</strong>
+                    <p>Skills to develop</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- AI/ML ENGINEER -->
+<section class="featured-career" id="ai-ml-engineer">
+    <div class="container featured-grid">
+
+        <div class="featured-info">
+            <p class="eyebrow">FEATURED CAREER</p>
+
+            <div class="featured-title">
+                <span class="featured-icon" aria-hidden="true">▦</span>
+                <div>
+                    <h2>AI/ML Engineer</h2>
+                    <p class="career-demand">↗ Emerging technology field</p>
+                </div>
+            </div>
+
+            <p class="featured-description">
+                Design and develop intelligent systems using machine
+                learning algorithms, data and artificial intelligence.
+            </p>
+
+            <h3 class="mini-heading">REQUIRED SKILLS</h3>
+
+            <div class="skill-tags">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>Statistics</span>
+                <span>NumPy</span>
+                <span>Pandas</span>
+                <span>Deep Learning</span>
+            </div>
+
+            <div class="skills-match">
+                <div class="match-heading">
+                    <strong>YOUR SKILLS MATCH</strong>
+                    <span>1/6 skills</span>
+                </div>
+
+                <div class="match-track">
+                    <span style="width: 16.67%;"></span>
+                </div>
+
+                <div class="match-tags">
+                    <span>✓ Python</span>
+                </div>
+            </div>
+
+            <a href="#roadmap" class="roadmap-button">
+                View Career Roadmap →
+            </a>
+        </div>
+
+        <div class="featured-analysis">
+            <div class="gap-panel">
+
+                <div class="gap-panel-heading">
+                    <h3>SKILL GAP ANALYSIS</h3>
+                    <p>Skills to develop for this career path.</p>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Machine Learning</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Statistics</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>NumPy</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Pandas</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Deep Learning</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <p class="gap-footnote">
+                    Your roadmap will focus on these
+                    <strong>5 missing skills</strong> to help you reach this career path.
+                </p>
+
+            </div>
+
+            <div class="skill-counts">
+                <div>
+                    <strong>1</strong>
+                    <p>Skills you already have</p>
+                </div>
+
+                <div>
+                    <strong>5</strong>
+                    <p>Skills to develop</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- CYBERSECURITY SPECIALIST -->
+<section class="featured-career" id="cybersecurity">
+    <div class="container featured-grid">
+
+        <div class="featured-info">
+            <p class="eyebrow">FEATURED CAREER</p>
+
+            <div class="featured-title">
+                <span class="featured-icon" aria-hidden="true">🔒</span>
+                <div>
+                    <h2>Cybersecurity Specialist</h2>
+                    <p class="career-demand">↗ Important security role</p>
+                </div>
+            </div>
+
+            <p class="featured-description">
+                Protect computer systems, networks and digital information
+                from cyber threats, vulnerabilities and unauthorized access.
+            </p>
+
+            <h3 class="mini-heading">REQUIRED SKILLS</h3>
+
+            <div class="skill-tags">
+                <span>Networking</span>
+                <span>Linux</span>
+                <span>Python</span>
+                <span>Cryptography</span>
+                <span>Network Security</span>
+                <span>Risk Analysis</span>
+            </div>
+
+            <div class="skills-match">
+                <div class="match-heading">
+                    <strong>YOUR SKILLS MATCH</strong>
+                    <span>1/6 skills</span>
+                </div>
+
+                <div class="match-track">
+                    <span style="width: 16.67%;"></span>
+                </div>
+
+                <div class="match-tags">
+                    <span>✓ Python</span>
+                </div>
+            </div>
+
+            <a href="#roadmap" class="roadmap-button">
+                View Career Roadmap →
+            </a>
+        </div>
+
+        <div class="featured-analysis">
+            <div class="gap-panel">
+
+                <div class="gap-panel-heading">
+                    <h3>SKILL GAP ANALYSIS</h3>
+                    <p>Skills to develop for this career path.</p>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Networking</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Linux</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Cryptography</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Network Security</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Risk Analysis</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <p class="gap-footnote">
+                    Your roadmap will focus on these
+                    <strong>5 missing skills</strong> to help you reach this career path.
+                </p>
+
+            </div>
+
+            <div class="skill-counts">
+                <div>
+                    <strong>1</strong>
+                    <p>Skills you already have</p>
+                </div>
+
+                <div>
+                    <strong>5</strong>
+                    <p>Skills to develop</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CLOUD ENGINEER -->
+<section class="featured-career" id="cloud-engineer">
+    <div class="container featured-grid">
+
+        <div class="featured-info">
+            <p class="eyebrow">FEATURED CAREER</p>
+
+            <div class="featured-title">
+                <span class="featured-icon" aria-hidden="true">☁</span>
+                <div>
+                    <h2>Cloud Engineer</h2>
+                    <p class="career-demand">↗ Growing technology field</p>
+                </div>
+            </div>
+
+            <p class="featured-description">
+                Design, deploy and maintain cloud infrastructure,
+                helping organizations run scalable and reliable applications.
+            </p>
+
+            <h3 class="mini-heading">REQUIRED SKILLS</h3>
+
+            <div class="skill-tags">
+                <span>AWS</span>
+                <span>Azure</span>
+                <span>Linux</span>
+                <span>Networking</span>
+                <span>Docker</span>
+                <span>Python</span>
+            </div>
+
+            <div class="skills-match">
+                <div class="match-heading">
+                    <strong>YOUR SKILLS MATCH</strong>
+                    <span>1/6 skills</span>
+                </div>
+
+                <div class="match-track">
+                    <span style="width: 16.67%;"></span>
+                </div>
+
+                <div class="match-tags">
+                    <span>✓ Python</span>
+                </div>
+            </div>
+
+            <a href="#roadmap" class="roadmap-button">
+                View Career Roadmap →
+            </a>
+        </div>
+
+        <div class="featured-analysis">
+            <div class="gap-panel">
+
+                <div class="gap-panel-heading">
+                    <h3>SKILL GAP ANALYSIS</h3>
+                    <p>Skills to develop for this career path.</p>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>AWS</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Azure</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Linux</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Networking</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <div class="gap-row">
+                    <div>
+                        <span>Docker</span>
+                        <small>Not started</small>
+                    </div>
+                    <div class="gap-track"><span></span></div>
+                </div>
+
+                <p class="gap-footnote">
+                    Your roadmap will focus on these
+                    <strong>5 missing skills</strong> to help you reach this career path.
+                </p>
+
+            </div>
+
+            <div class="skill-counts">
+                <div>
+                    <strong>1</strong>
+                    <p>Skills you already have</p>
+                </div>
+
+                <div>
+                    <strong>5</strong>
+                    <p>Skills to develop</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+        <section class="roadmap-section" id="roadmap">
+            <div class="container">
+                <p class="eyebrow">ROADMAP</p>
+                <h2>Your Career Roadmap</h2>
+                <div class="roadmap-timeline">
+                    <article class="roadmap-step completed"><span class="roadmap-number">✓</span><h3>Foundations</h3><p>HTML, CSS, Logic</p><small>Done</small></article>
+                    <article class="roadmap-step completed"><span class="roadmap-number">✓</span><h3>Programming</h3><p>Python, Java</p><small>Done</small></article>
+                    <article class="roadmap-step current"><span class="roadmap-number">03</span><h3>Data Structures</h3><p>Arrays, Trees, Graphs</p><small>Up next</small></article>
+                    <article class="roadmap-step"><span class="roadmap-number">04</span><h3>Databases</h3><p>SQL, ORMs</p></article>
+                    <article class="roadmap-step"><span class="roadmap-number">05</span><h3>Development</h3><p>Frameworks, APIs</p></article>
+                    <article class="roadmap-step"><span class="roadmap-number">06</span><h3>Projects</h3><p>Portfolio work</p></article>
+                </div>
+                <div class="overall-progress"><div><strong>Overall progress</strong><span>2 of 6 stages complete</span></div><div class="overall-track"><span></span></div></div>
+            </div>
+        </section>
+
+        <section class="next-step-section">
+            <div class="container next-step-content">
+                <div><p class="eyebrow">NEXT STEP</p><h2>Build Skills Through Projects</h2><p>Practice what you learn through practical projects and curated<br class="desktop-break"> learning resources aligned with your Software Developer roadmap.</p></div>
+                <a class="roadmap-button" href="projects-resources.html">Projects &amp; Resources <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+
+        <section class="career-cta">
+            <div class="container cta-content">
+                <span class="cta-line"></span>
+                <h2>Ready to Start Your Career<br>Journey?</h2>
+                <p>Explore your options, identify your skill gaps, and start building<br class="desktop-break"> the skills you need.</p>
+                <a class="primary-button" href="login.html">Get Started <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand"><img src="assets/logo.png" alt="Career Campus logo" class="footer-logo"><p>FROM COLLEGE TO CAREER</p></div>
+            <div class="footer-social"><a href="#" aria-label="X">X</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Instagram">◎</a></div>
+        </div>
+        <div class="container footer-bottom"><p>© 2026 Career Campus. All rights reserved.</p><span>LEARN · EXPLORE · GROW · SUCCEED</span></div>
+    </footer>
+    <script src="js/career-guide.js"></script>
+</body>
+</html>

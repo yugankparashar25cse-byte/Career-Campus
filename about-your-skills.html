@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Your Skills | Career Campus</title>
+  <link rel="stylesheet" href="about-your-skills.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Career Campus home">
+      <img src="assets/logo.png" alt="Career Campus logo">
+      <span class="brand-divider"></span>
+      <span class="brand-tagline">FROM COLLEGE TO CAREER</span>
+    </a>
+    <div class="step-pill"><span></span>Profile Setup — Step 1 of 2</div>
+  </header>
+
+  <main class="page">
+    <div class="page-heading">
+      <h1>Let's Understand You</h1>
+      <p>Tell us about your education, interests, and current skills.</p>
+    </div>
+
+    <div class="progress-meta">
+      <strong>Step 1 of 2</strong>
+      <span>50% complete</span>
+    </div>
+    <div class="progress-track"><div class="progress-value"></div></div>
+
+    <form id="skills-form">
+      <section class="form-section">
+        <div class="section-heading">
+          <h2>Academic Background</h2>
+          <p>Help us match careers to your education.</p>
+        </div>
+        <div class="panel academic-panel">
+          <div class="field">
+    <label for="degree">Degree</label>
+    <select id="degree" name="degree" required>
+        <option value="">Select your degree</option>
+        <option value="B.Tech">B.Tech</option>
+        <option value="B.E">B.E</option>
+        <option value="BCA">BCA</option>
+        <option value="B.Sc">B.Sc</option>
+        <option value="MCA">MCA</option>
+        <option value="M.Tech">M.Tech</option>
+        <option value="Other">Other</option>
+    </select>
+</div>
+          <div class="field">
+            <label for="year">Year of Study</label>
+            <select id="year" name="year">
+              <option value="">Select year of study</option>
+              <option>1st Year</option>
+              <option>2nd Year</option>
+              <option>3rd Year</option>
+              <option>4th Year</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+    <label for="specialization">Specialization <span class="optional">(optional)</span></label>
+    <select id="specialization" name="specialization" disabled>
+        <option value="">Select degree first</option>
+    </select>
+</div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <div class="section-heading">
+          <h2>Your Interests</h2>
+          <p>Select the areas you are most interested in. <span class="gold-text">Choose as many as you like.</span></p>
+        </div>
+        <div class="panel chip-panel">
+          <label class="chip"><input type="checkbox" name="interest" value="web-development"><span>Web Development</span></label>
+          <label class="chip"><input type="checkbox" name="interest" value="data"><span>Data</span></label>
+          <label class="chip"><input type="checkbox" name="interest" value="ai-ml"><span>AI / ML</span></label>
+          <label class="chip"><input type="checkbox" name="interest" value="cybersecurity"><span>Cybersecurity</span></label>
+          <label class="chip"><input type="checkbox" name="interest" value="cloud-computing"><span>Cloud Computing</span></label>
+          <label class="chip"><input type="checkbox" name="interest" value="design"><span>Design</span></label>
+          <label class="chip"><input type="checkbox" name="interest" value="business"><span>Business</span></label>
+          <label class="chip"><input type="checkbox" name="interest" value="research"><span>Research</span></label>
+        </div>
+      </section>
+
+      <section class="form-section skills-form-section">
+        <div class="section-heading">
+          <h2>Your Current Skills</h2>
+          <p>Select the technologies and tools you are familiar with.</p>
+        </div>
+        <div class="panel chip-panel skill-chip-panel">
+          <label class="chip"><input type="checkbox" name="skill" value="html"><span>HTML</span></label>
+          <label class="chip"><input type="checkbox" name="skill" value="css"><span>CSS</span></label>
+          <label class="chip"><input type="checkbox" name="skill" value="javascript"><span>JavaScript</span></label>
+          <label class="chip"><input type="checkbox" name="skill" value="python"><span>Python</span></label>
+          <label class="chip"><input type="checkbox" name="skill" value="java"><span>Java</span></label>
+          <label class="chip"><input type="checkbox" name="skill" value="cpp"><span>C++</span></label>
+          <label class="chip"><input type="checkbox" name="skill" value="sql"><span>SQL</span></label>
+          <label class="chip"><input type="checkbox" name="skill" value="git"><span>Git</span></label>
+          <label class="chip"><input type="checkbox" name="skill" value="react"><span>React</span></label>
+          <label class="chip"><input type="checkbox" name="skill" value="nodejs"><span>Node.js</span></label>
+        </div>
+
+        <div class="experience">
+          <h3>Experience Level</h3>
+          <label class="level-option">
+            <input type="radio" name="experience" value="beginner">
+            <span class="radio"></span>
+            <span class="level-copy"><strong>Beginner</strong><small>Just starting out — some exposure but limited hands-on experience.</small></span>
+          </label>
+          <label class="level-option">
+            <input type="radio" name="experience" value="intermediate">
+            <span class="radio"></span>
+            <span class="level-copy"><strong>Intermediate</strong><small>Comfortable with the basics and working toward more complex projects.</small></span>
+          </label>
+          <label class="level-option">
+            <input type="radio" name="experience" value="advanced">
+            <span class="radio"></span>
+            <span class="level-copy"><strong>Advanced</strong><small>Strong foundation with significant project or work experience.</small></span>
+          </label>
+        </div>
+      </section>
+
+      <div class="form-navigation">
+        <a class="back-link" href="login.html">← Back</a>
+        <button class="continue-button" type="submit">Continue <span>→</span></button>
+      </div>
+    </form>
+  </main>
+  <script src="js/skills.js"></script>
+  <script src="js/specialization.js"></script>
+</body>
+</html>

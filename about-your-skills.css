@@ -1,0 +1,229 @@
+/* Career Campus — About Your Skills page */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #0b2034;
+  --ink: #14263a;
+  --muted: #718096;
+  --gold: #cda653;
+  --cream: #f7f4ec;
+  --border: #e3dacb;
+  --white: #ffffff;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.45;
+}
+
+.topbar {
+  height: 58px;
+  width: 100%;
+  padding: 0 4.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1px solid #e7e1d7;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+.brand img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  flex: 0 0 50px;
+}
+.brand-divider { width: 1px; height: 20px; background: #ddd5c8; }
+.brand-tagline {
+  color: #718096;
+  font-size: 9px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.step-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 13px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 700;
+}
+.step-pill span { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+
+.page {
+  width: min(588px, calc(100% - 40px));
+  margin: 45px auto 64px;
+}
+.page-heading { margin-bottom: 36px; }
+.page-heading h1 {
+  color: var(--navy);
+  font: 700 34px/1.15 Georgia, "Times New Roman", serif;
+  margin-bottom: 7px;
+}
+.page-heading p { color: #53647a; font-size: 14px; }
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+  font-size: 10px;
+}
+.progress-meta strong { color: var(--ink); }
+.progress-meta span { color: #8090a4; }
+.progress-track {
+  width: 100%;
+  height: 4px;
+  background: #e4dfd5;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 42px;
+}
+.progress-value { width: 50%; height: 100%; background: var(--gold); border-radius: inherit; }
+
+.form-section { margin-bottom: 36px; }
+.section-heading { margin-bottom: 17px; }
+.section-heading h2 {
+  color: var(--navy);
+  font: 700 19px/1.2 Georgia, "Times New Roman", serif;
+  margin-bottom: 5px;
+}
+.section-heading p { color: #7b8ba0; font-size: 11px; }
+.gold-text { color: #c28e31; }
+
+.panel {
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  box-shadow: 0 0 0 1px rgba(215, 204, 186, .18);
+}
+.academic-panel { padding: 22px 24px 23px; }
+.field { margin-bottom: 16px; }
+.field:last-child { margin-bottom: 0; }
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 700;
+}
+.optional { color: #9aabc0; font-weight: 400; }
+.field input, .field select {
+  width: 100%;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #d9cdbb;
+  border-radius: 5px;
+  background: #fff;
+  color: #52647a;
+  font: 12px Arial, sans-serif;
+  outline: none;
+}
+.field input:focus, .field select:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(205,166,83,.13); }
+.field input::placeholder { color: #9ba2aa; }
+.field select:invalid { color: #9ba2aa; }
+
+.chip-panel {
+  min-height: 91px;
+  padding: 20px 23px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 8px;
+}
+.chip { position: relative; cursor: pointer; }
+.chip input { position: absolute; opacity: 0; pointer-events: none; }
+.chip span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 31px;
+  padding: 0 13px;
+  border: 1px solid #d9cbb6;
+  border-radius: 18px;
+  background: #fff;
+  color: #53647a;
+  font-size: 10px;
+  white-space: nowrap;
+  transition: .18s ease;
+}
+.chip input:checked + span { color: #fff; background: var(--navy); border-color: var(--navy); }
+.chip input:focus-visible + span { outline: 2px solid var(--gold); outline-offset: 2px; }
+.chip span:hover { border-color: var(--gold); }
+.skill-chip-panel { min-height: 110px; }
+
+.skills-form-section { margin-bottom: 36px; }
+.experience { margin-top: 15px; }
+.experience h3 { margin-bottom: 9px; font-size: 10px; color: var(--ink); }
+.level-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 60px;
+  padding: 10px 15px;
+  margin-bottom: 7px;
+  border: 1px solid #d9cdbb;
+  border-radius: 7px;
+  background: #fff;
+  cursor: pointer;
+}
+.level-option input { position: absolute; opacity: 0; }
+.radio {
+  flex: 0 0 14px;
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid #d4c6b0;
+  border-radius: 50%;
+}
+.level-option input:checked + .radio { border: 4px solid var(--gold); }
+.level-option input:focus-visible + .radio { outline: 2px solid var(--gold); outline-offset: 2px; }
+.level-copy { display: flex; flex-direction: column; gap: 2px; }
+.level-copy strong { color: var(--ink); font-size: 11px; }
+.level-copy small { color: #8090a4; font-size: 10px; }
+
+.form-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 7px;
+  border-top: 1px solid #e3dacb;
+}
+.back-link { color: #75869b; font-size: 11px; text-decoration: none; }
+.back-link:hover { color: var(--navy); }
+.continue-button {
+  min-width: 124px;
+  height: 37px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--navy);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.continue-button span { margin-left: 7px; font-size: 15px; }
+.continue-button:hover { background: #173752; }
+
+@media (max-width: 620px) {
+  .topbar { padding: 0 18px; }
+  .brand-tagline { font-size: 8px; letter-spacing: 1.2px; }
+  .page { margin-top: 32px; width: calc(100% - 32px); }
+  .page-heading h1 { font-size: 30px; }
+  .progress-track { margin-bottom: 34px; }
+  .academic-panel { padding: 18px; }
+  .chip-panel { padding: 16px; gap: 7px; }
+  .chip span { padding: 0 11px; }
+}

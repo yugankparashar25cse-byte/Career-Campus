@@ -1,0 +1,15 @@
+
+node_modules/
+.env
+.env.*
+!.env.example
+
+.vscode/
+.DS_Store
+
+# Exclude real user data
+Backend/Data/users.json
+Backend/Data/profiles.json
+# Exclude Figma Make exports
+/Career Campus Website UI – Figma Make.html
+/Career Campus Website UI – Figma Make_files/
